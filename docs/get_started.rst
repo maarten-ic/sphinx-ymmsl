@@ -51,7 +51,7 @@ How It Is Converted
 -------------------
 
 This section describes how the yMMSL file is translated into documentation, so you
-know what to change if the generated output does not look the way you want.
+know what to change to adapt your documentation.
 
 Generated Titles
 ~~~~~~~~~~~~~~~~
@@ -69,33 +69,9 @@ The top-level page title comes from the **filename** of the yMMSL file (without 
 
 To change the page title, rename the yMMSL file.
 
-**Model section title**
+**Model and component section titles**
 
-Each model in the file gets its own section. The heading is derived from the **key
-under** ``models:`` in the yMMSL file. For example:
-
-.. code-block:: yaml
-
-   models:
-     macro_micro_model:
-       ...
-
-produces the section heading *Macro Micro Model*.
-
-To change the model section title, rename the key under ``models:``.
-
-**Component section title**
-
-Each component within a model gets its own subsection. The heading comes from the
-**key under** ``components:``. For example:
-
-.. code-block:: yaml
-
-   components:
-     macro:
-       ...
-
-produces the subsection heading *Macro*.
-
-To change a component subsection title, rename the key under ``components:``.
+Each model and component gets its own section. The heading is derived from the
+**key name** used in the yMMSL file — under ``models:`` for models and under
+``components:`` for components. To change a heading, rename the corresponding key.
 
