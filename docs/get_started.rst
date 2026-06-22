@@ -47,6 +47,12 @@ When Sphinx builds your documentation, the ``.. ymmsl::`` directive will:
 2. Generate formatted Markdown documentation
 3. Convert the Markdown to HTML
 
+How It Is Converted
+-------------------
+
+This section describes how the yMMSL file is translated into documentation, so you
+know what to change if the generated output does not look the way you want.
+
 Generated Titles
 ~~~~~~~~~~~~~~~~
 
