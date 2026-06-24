@@ -47,3 +47,31 @@ When Sphinx builds your documentation, the ``.. ymmsl::`` directive will:
 2. Generate formatted Markdown documentation
 3. Convert the Markdown to HTML
 
+How It Is Converted
+-------------------
+
+This section describes how the yMMSL file is translated into documentation, so you
+know what to change to adapt your documentation.
+
+Generated Titles
+~~~~~~~~~~~~~~~~
+
+The extension automatically derives all titles and section headings from names in the
+yMMSL file and from the filename itself. The same formatting rule applies throughout:
+underscores are replaced with spaces and each word is capitalised (e.g.
+``macro_micro_model`` becomes ``Macro Micro Model``).
+
+**Page title**
+
+The top-level page title comes from the **filename** of the yMMSL file (without the
+``.ymmsl`` extension). For example, ``macro_micro_model.ymmsl`` produces the heading
+*Macro Micro Model Documentation*.
+
+To change the page title, rename the yMMSL file.
+
+**Model and component section titles**
+
+Each model and component gets its own section. The heading is derived from the
+**key name** used in the yMMSL file — under ``models:`` for models and under
+``components:`` for components. To change a heading, rename the corresponding key.
+
