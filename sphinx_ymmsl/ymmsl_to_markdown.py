@@ -138,7 +138,7 @@ def generate_document_header(ymmsl_path: Path, description: Optional[str]) -> Li
     """
     Generate Markdown lines for the document header: title and optional description.
     """
-    title = f"{format_title(ymmsl_path.stem)} Documentation"
+    title = f"{format_title(ymmsl_path.stem)}"
     return generate_header(title, description, header_level=1)
 
 

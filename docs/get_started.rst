@@ -65,7 +65,7 @@ underscores are replaced with spaces and each word is capitalised (e.g.
 
 The top-level page title comes from the **filename** of the yMMSL file (without the
 ``.ymmsl`` extension). For example, ``macro_micro_model.ymmsl`` produces the heading
-*Macro Micro Model Documentation*.
+*Macro Micro Model*.
 
 To change the page title, rename the yMMSL file.
 
