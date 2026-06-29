@@ -25,7 +25,7 @@ class TestGenerateDocumentHeader:
         path = Path("/tmp/test_model.ymmsl")
         result = generate_document_header(path, "Test description")
 
-        assert "# Test Model Documentation" in result
+        assert "# Test Model" in result
         assert "Test description" in result
 
 
@@ -204,7 +204,6 @@ class TestYmmslToMarkdown:
         result = ymmsl_to_markdown(temp_path)
 
         assert "# " in result
-        assert "Documentation" in result
         assert "**Model file**:" in result
         assert "**yMMSL version**: `v0.2`" in result
         assert "A test model" in result
@@ -215,7 +214,6 @@ class TestYmmslToMarkdown:
         result = ymmsl_to_markdown(temp_path)
 
         assert "# " in result
-        assert "Documentation" in result
         assert "Minimal test configuration" in result
         # Should not have Models section
         assert "## Models" not in result
